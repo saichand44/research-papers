@@ -14,7 +14,7 @@ This repository contains `research papers` related to robotics.
 
 [2] [iMAP: Implicit Mapping and Positioning in Real-Time](https://ieeexplore.ieee.org/document/9710431)
 
-`Authors`:Edgar Sucar, Shikun Liu, Joseph Ortiz, Andrew Davison
+`Authors`: Edgar Sucar, Shikun Liu, Joseph Ortiz, Andrew Davison
 
 `DOI`: 10.1109/ICCV48922.2021.00617
 
