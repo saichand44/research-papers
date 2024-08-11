@@ -35,3 +35,15 @@ This repository contains `research papers` related to robotics.
 ![Light Conditioned NeRF](https://github.com/saichand44/research-papers/assets/14955987/c406b507-9590-4821-b2b4-89aec8ef27a0)
 
 ---
+
+[4] [MAGIC-VFM: Meta-learning Adaptation for Ground Interaction Control with Visual Foundation Models](https://www.researchgate.net/publication/382331849_MAGIC-VFM_Meta-learning_Adaptation_for_Ground_Interaction_Control_with_Visual_Foundation_Models)
+
+`Authors`: Elena Sorina Lupu, Fengze Xie, James A. Preiss, Jedidiah Alindogan, Matthew Anderson, Soon-Jo Chung
+
+`DOI`: https://doi.org/10.48550/arXiv.2407.12304
+
+`Summary`: <div align="justify"> This paper presents a `learning-based adaptive control` that improves the tracking error between the actual and reference trajectory. For an uncertain dynamical system, where we cannot fully capture the dynamics of the system, we consider a process noise or disturbance that accounts for the discrepencies. This `noise / disturbance` can depend on several factors including the environment the robot is operating. The idea is to estimate this noise better by identifying the terrain the robot is operating and hence it uses a camera to capture the terrain, which then is fed to a `VFM (Dino V1)` to convert it to a feature vector. This papers presents a method to feed an adaptive controller a comprehensive information about the dynamics by considering the `terrain (from VFM)`, `robot's state` for a better input control that ensures minimal tracking error. Precisely, in the process dynamics, this paper aims to model the noise as a `DNN`. For the training purpose, the `DNN` uses the `robot states`, `feature vectors related to the terrain from VFM` as inputs and `difference of actual and predicted dynamics` as labels (for the noise). The `DNN` also has online adaptation to account for changes during operation. It discusses the simulation / hardware results of the new control on varying terrain conditions and how it compensates for the `longitudinal slip` on different terrains. Additionally, the paper discusses the efficacy of the adaptive control for wear and tear of the drive mechanism (track / wheels). </div>
+
+![Magic-VFM Workflow](https://github.com/user-attachments/assets/31973e4b-a9e2-46c2-a109-63061b066a3f)
+
+---
