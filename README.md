@@ -47,3 +47,16 @@ This repository contains `research papers` related to robotics.
 ![Magic-VFM Workflow](https://github.com/user-attachments/assets/31973e4b-a9e2-46c2-a109-63061b066a3f)
 
 ---
+
+[5] [DiffStack: A Differentiable and Modular Control Stack for Autonomous Vehicles](https://www.google.com/url?q=https%3A%2F%2Fopenreview.net%2Fforum%3Fid%3DteEnA3L4aRe&sa=D&sntz=1&usg=AOvVaw3xfB455sSquEJWv2lRzMgr)
+
+`Authors`: Peter Karkus, Boris Ivanovic, Shie Mannor, Marco Pavone
+
+`DOI`: [https://doi.org/10.1007/978-3-031-43996-4_51](https://doi.org/10.48550/arXiv.2212.06437)
+
+`Summary`: <div align="justify"> This paper presents a differentiable and modular `Autonomous Vehicle` stack for prediction, planning and control and enables a way for `planning aware prediction`. Traditionally, AV stacks are independent and modular with explicit components performing perception, prediction, planning and control, but these suffer from compounding errors and integration challenges. At the other end, there's end-to-end neural network approach that can handle integration issues, compounding errors since the final cost is dependent on the entire network, but this suffers from modularity. `DiffStack` is the best of both worlds where modular stacks are trained with their respective training losses. This papers mainly discusses this approach in the context of `prediction` (of non-AV agents), `planning` (of ego car) and `control` (of ego car). The NN approach enables the `prediction` module to consider the final control objective. The training and tests are performed on [**nuScenes**](https://www.nuscenes.org/) dataset. Overall, `DiffStack` a) makes fewer prediction erroes that effect planning, b) accounts for system integration erros</div>
+
+![DiffStack1](https://github.com/user-attachments/assets/7f8d686a-34ad-4f4f-bc7a-7c5d8f1e08a4)
+![DiffStack2](https://github.com/user-attachments/assets/a0c1befc-284c-4675-bd27-1d92936bb2ad)
+
+---
